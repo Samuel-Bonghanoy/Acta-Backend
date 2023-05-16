@@ -19,10 +19,4 @@ db.sequelize.sync().then((req) => {
   });
 });
 
-export default app;
-
-// "username": "user",
-//     "password": "Sf1EZ7vN",
-//     "database": "acta_app",
-//     "host": "mysql-126667-0.cloudclusters.net",
-//     "dialect": "mysql"
+module.exports = app;
