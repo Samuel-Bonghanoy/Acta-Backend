@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "Sf1EZ7vN",
+    "database": "acta",
+    "host": "mysql-126667-0.cloudclusters.net",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "admin",
+    "password": "Sf1EZ7vN",
+    "database": "database_test",
+    "host": "68.64.164.117",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "admin",
+    "password": "Sf1EZ7vN",
+    "database": "database_production",
+    "host": "68.64.164.117",
+    "dialect": "mysql"
+  }
+}
