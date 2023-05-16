@@ -18,5 +18,3 @@ db.sequelize.sync().then((req) => {
     console.log("server running on port 10041");
   });
 });
-
-module.exports = app;
