@@ -19,6 +19,8 @@ db.sequelize.sync().then((req) => {
   });
 });
 
+export default app;
+
 // "username": "user",
 //     "password": "Sf1EZ7vN",
 //     "database": "acta_app",
