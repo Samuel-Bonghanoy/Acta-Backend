@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/post", postRouter);
 
 db.sequelize.sync().then((req) => {
-  app.listen(10041, () => {
+  app.listen(10000, () => {
     console.log("server running on port 10041");
   });
 });
