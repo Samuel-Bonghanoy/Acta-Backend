@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "admin",
-    "password": "Sf1EZ7vN",
-    "database": "acta",
-    "host": "mysql-126667-0.cloudclusters.net",
+    "username": "root",
+    "password": "password",
+    "database": "acta_app",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
-    "username": "admin",
-    "password": "Sf1EZ7vN",
+    "username": "root",
+    "password": null,
     "database": "database_test",
-    "host": "68.64.164.117",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "admin",
-    "password": "Sf1EZ7vN",
+    "username": "root",
+    "password": null,
     "database": "database_production",
-    "host": "68.64.164.117",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
