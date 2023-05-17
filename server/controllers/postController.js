@@ -69,3 +69,24 @@ exports.deleteAllPosts = async (req, res) => {
     data: null,
   });
 };
+
+exports.updatePost = async (req, res) => {
+  console.log("Updating Post");
+
+  let ret = await instance.Post.update(
+    {
+      title: req.body.title,
+      content: req.body.content,
+      datePosted: req.body.datePosted,
+      postedBy: req.body.postedBy,
+      description: req.body.description,
+      tags: req.body.tags,
+      coverURL: req.body.coverURL,
+    },
+    {
+      where: { id: req.params.id },
+    }
+  );
+
+  res.status(201).send(ret);
+};

@@ -6,8 +6,14 @@ const router = express.Router();
 // router.route("/deleteall").delete(postController.deleteAllTasks);
 
 router
-  .route("/post")
+  .route("/")
   .post(postController.handleCreatePost)
-  .get(postController.displayPosts);
+  .get(postController.displayPosts)
+  .delete(postController.deleteAllPosts);
+
+router
+  .route("/:id")
+  .delete(postController.deletePost)
+  .patch(postController.updatePost);
 
 module.exports = router;
